@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home-container div {
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(104, 206, 205, 0) 0%,
+    rgba(95, 114, 117, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin-inline: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.home-container div img {
+  width: 96%;
+  height: 80%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.home-container div span{
+    color: darkblue;
+    text-align: center;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 5px;
+}
+#price{
+    color:black
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Header from "./Header/Header";
+import HomePage from "./Home/HomePage";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <>
         <div class="container">
           <div class="App-Header"><Header/></div>
-          <div class="App-Body"></div>
+          <div class="App-Body"><HomePage/></div>
         </div>
       </>
     </div>
