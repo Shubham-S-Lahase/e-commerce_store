@@ -36,6 +36,11 @@ ul {
 }
 li {
   padding: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  font-style: oblique;
+  text-decoration: solid;
+  font-weight: bolder;
 }
 
 li:hover {

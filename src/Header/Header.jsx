@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Header.css";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
-  let countclick = 0;
   const handleClick = () => {
     setOpen(true);
   };
@@ -21,10 +20,8 @@ const Header = () => {
             <>
               <div className="dropdown">
                 <ul>
-                  <li>Option 1</li>
-                  <li>Option 2</li>
-                  <li>Option 3</li>
-                  <li>Option 4</li>
+                  <li>Games</li>
+                  <li>Fan Gear</li>
                 </ul>
               </div>
             </>
@@ -36,7 +33,7 @@ const Header = () => {
             <p>Video Games & Fan Gear</p>
           </div>
           <div className="cart-logo">
-            <img src={require("./R.png")}/>
+            <Link to="/cart"><img src={require("./R.png")}/></Link>
           </div>
         </div>
       </div>
