@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import { useCart } from "react-use-cart";
 
 const Product = (productinfo) => {
@@ -22,14 +22,28 @@ const Product = (productinfo) => {
     imageroute: imgSrc, 
   }
 
+  const[nav, setNav] = useState(false);
+  if(nav){
+    <Navigate to={"/cart"}/>
+  }
+
   return (
     <>
       <div>
         <img src={imgSrc} />
         <span>{name}</span>
         <span id="price">RS {price}</span>
-        <Link to={{pathname:"/productpage",id:{id}}} ><button id="buy">BUY</button></Link>
-        <button id="cart" onClick={() => addItem(cartItem)}>Add to Cart</button>
+        <button
+         id="cart" 
+         onClick={() => {
+          addItem(cartItem)
+          alert(`Item added sucessfully
+                Please view cart for placing order    
+          `);
+          setNav(true);
+          }}>
+          Add to Cart
+         </button>
       </div>
     </>
   );

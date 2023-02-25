@@ -20,8 +20,8 @@ const Header = () => {
             <>
               <div className="dropdown">
                 <ul>
-                  <li>Games</li>
-                  <li>Fan Gear</li>
+                  <Link to={"/"}><li>Games</li></Link>
+                  <Link to={"/fangears"}><li>Fan Gear</li></Link>
                 </ul>
               </div>
             </>

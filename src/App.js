@@ -20,7 +20,6 @@ function App() {
                 <Routes>
                   <Route path="/" index element={<HomePage />} />
                   <Route path="/cart" element={<Cart/>} />
-
                 </Routes>
             </div>
           </div>

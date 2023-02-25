@@ -7,8 +7,8 @@
 }
 .home-container div {
   align-items: center;
-  width: 600px;
-  height: 600px;
+  width: 450px;
+  height: 450px;
   border: 1px solid black;
   background: rgb(2, 0, 36);
   background: radial-gradient(
@@ -50,9 +50,11 @@
   background-color: blue;
   color: yellowgreen;
 }
-#buy{
-  margin-top: 5px;
-}
 #cart{
+  margin-top: 10px;
   background-color: darkslategrey;
+  border: none;
+}
+#cart:hover{
+  cursor: pointer;
 }
